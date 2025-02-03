@@ -1,0 +1,49 @@
+<div class="container">
+  <!-- 🏆 Cabeçalho -->
+  <h2 class="title">🏆 Classificação dos Atletas</h2>
+
+  <!-- 📤 Botão de Exportação -->
+  <button class="export-button" (click)="exportToCsv()">
+    📥 Exportar CSV
+  </button>
+
+  <!-- 📊 Tabela Responsiva -->
+  <div class="table-container">
+    <table>
+      <thead>
+      <tr>
+        <th>🏅 Posição</th>
+        <th>🧑 Nome</th>
+        <th>📊 Score</th>
+        <th>🏃 100m</th>
+        <th>🦘 Long Jump</th>
+        <th>🏋️ Shot Put</th>
+        <th>🌲 High Jump</th>
+        <th>🏃‍♂️ 400m</th>
+        <th>🏃‍♀️ 110m Hurdles</th>
+        <th>🌊 Discus Throw</th>
+        <th>🎯 Pole Vault</th>
+        <th>🏹 Javelin Throw</th>
+        <th>⏱️ 1500m</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr *ngFor="let atleta of atletas">
+        <td data-label="🏅 Posição">{{ atleta.posicao }}</td>
+        <td data-label="🧑 Nome">{{ atleta.name }}</td>
+        <td data-label="📊 Score">{{ atleta.score }} pts</td>
+        <td data-label="🏃 100m">{{ atleta['100m'] }} pts</td>
+        <td data-label="🦘 Long Jump">{{ atleta['long_jump'] }} pts</td>
+        <td data-label="🏋️ Shot Put">{{ atleta['shot_put'] }} pts</td>
+        <td data-label="🌲 High Jump">{{ atleta['high_jump'] }} pts</td>
+        <td data-label="🏃‍♂️ 400m">{{ atleta['400m'] }} pts</td>
+        <td data-label="🏃‍♀️ 110m Hurdles">{{ atleta['110m_hurdles'] }} pts</td>
+        <td data-label="🌊 Discus Throw">{{ atleta['discus_throw'] }} pts</td>
+        <td data-label="🎯 Pole Vault">{{ atleta['pole_vault'] }} pts</td>
+        <td data-label="🏹 Javelin Throw">{{ atleta['javelin_throw'] }} pts</td>
+        <td data-label="⏱️ 1500m">{{ atleta['1500m'] }} pts</td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

@@ -1,0 +1,54 @@
+[
+  {
+    "name": "Athlete 1",
+    "100m": 10.395,
+    "long_jump": 7.76,
+    "shot_put": 18.4,
+    "high_jump": 2.2,
+    "400m": 46.17,
+    "110m_hurdles": 13.8,
+    "discus_throw": 56.17,
+    "pole_vault": 5.28,
+    "javelin_throw": 77.19,
+    "1500m": "3:53.79"
+  },
+  {
+    "name": "Athlete 2",
+    "100m": 10.827,
+    "long_jump": 7.36,
+    "shot_put": 16.79,
+    "high_jump": 2.1,
+    "400m": 48.19,
+    "110m_hurdles": 14.59,
+    "discus_throw": 51.4,
+    "pole_vault": 4.96,
+    "javelin_throw": 70.67,
+    "1500m": "4:07.42"
+  },
+  {
+    "name": "Athlete 3",
+    "100m": 11.278,
+    "long_jump": 6.941,
+    "shot_put": 15.16,
+    "high_jump": 1.99,
+    "400m": 50.32,
+    "110m_hurdles": 15.419,
+    "discus_throw": 46.59,
+    "pole_vault": 4.63,
+    "javelin_throw": 64.09,
+    "1500m": "4:21.77"
+  },
+  {
+    "name": "Athlete 4",
+    "100m": 11.756,
+    "long_jump": 6.51,
+    "shot_put": 13.53,
+    "high_jump": 1.88,
+    "400m": 52.58,
+    "110m_hurdles": 16.29,
+    "discus_throw": 41.72,
+    "pole_vault": 4.29,
+    "javelin_throw": 57.45,
+    "1500m": "4:36.96"
+  }
+]

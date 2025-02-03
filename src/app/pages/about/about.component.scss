@@ -1,0 +1,138 @@
+.container {
+  background: white;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-width: 600px;
+  min-height: 85vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px auto 0 auto;
+}
+
+.profile-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5px;
+}
+
+.profile-container img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #007BFF;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.skills-container {
+  background: white;
+  padding: 8px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px;
+  margin: 5px auto;
+}
+
+.skills-title {
+  text-align: center;
+  color: #007BFF;
+  font-weight: bold;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 5px;
+}
+
+.skills-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.skills-list li {
+  background: #f8f9fa;
+  padding: 6px;
+  margin: 3px 0;
+  border-radius: 8px;
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 100%;
+  max-width: 250px;
+  margin-top: 5px;
+}
+
+.buttons a {
+  text-decoration: none;
+}
+
+.buttons button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  font-weight: bold;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  padding: 10px 15px;
+  border-radius: 8px;
+  font-size: 14px;
+  transition: all 0.3s ease-in-out;
+  width: 100%;
+  cursor: pointer;
+  background: #007BFF;
+  color: white;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.15);
+}
+
+.buttons button:hover {
+  background: #0056b3;
+  transform: scale(1.03);
+}
+
+.menu-container {
+  display: flex;
+  justify-content: center;
+  background: #007BFF;
+  padding: 10px;
+  border-radius: 10px;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 600px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 95%;
+    min-height: auto;
+    padding: 10px;
+    justify-content: center;
+  }
+
+  .skills-container {
+    max-width: 100%;
+  }
+
+  .buttons {
+    max-width: 100%;
+  }
+}
