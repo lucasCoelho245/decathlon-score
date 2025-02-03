@@ -39,8 +39,6 @@ export class ScoresComponent implements OnInit {
         const { A, B, C } = this.sistemaPontuacao[evento];
         let P = atleta[evento];
 
-
-        // Conversão do tempo do 1500m para segundos, se necessário
         if (evento === "1500m" && typeof P === 'string') {
           const tempoRegex = /^(\d+):(\d+(\.\d+)?)$/;
           const match = P.match(tempoRegex);
@@ -55,11 +53,9 @@ export class ScoresComponent implements OnInit {
         }
 
         let pontos = 0;
-        // Para eventos de campo (salto e arremesso): maior P gera mais pontos
         if (evento.includes('throw') || evento.includes('jump')) {
           pontos = Math.max(0, Math.floor(A * Math.pow(Math.max(P - B, 0), C)));
         } else {
-          // Para eventos de corrida: menor P gera mais pontos
           pontos = Math.max(0, Math.floor(A * Math.pow(Math.max(B - P, 0), C)));
         }
 
@@ -90,13 +86,11 @@ export class ScoresComponent implements OnInit {
       return;
     }
 
-    // Definindo os cabeçalhos – usando ';' como delimitador
     const headers = [
       'Posição', 'Nome', 'Score', '100m', 'Long Jump', 'Shot Put', 'High Jump', '400m',
       '110m Hurdles', 'Discus Throw', 'Pole Vault', 'Javelin Throw', '1500m'
     ].join(';');
 
-    // Criando as linhas do CSV para cada atleta
     const csvRows = this.atletas.map((atleta: any) =>
       [
         atleta.posicao,
@@ -117,7 +111,6 @@ export class ScoresComponent implements OnInit {
 
     const csvString = [headers, ...csvRows].join('\n');
 
-    // Adiciona BOM para UTF-8, garantindo a correta exibição de acentos no Excel
     const bom = "\ufeff";
     const blob = new Blob([bom + csvString], { type: 'text/csv;charset=utf-8;' });
     const url = URL.createObjectURL(blob);
