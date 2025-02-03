@@ -1,6 +1,6 @@
 # DecathlonScore
 
-Projeto front-end para calcular e exibir as pontuações de um decatlo, utilizando Angular como framework.
+Projeto front-end para calcular e exibir as Decathlon scores, utilizando Angular como framework.
 
 ## Requisitos do Sistema
 
